@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+header{
+    padding: 50px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.582), transparent);
+    text-align: center;
+    font-size: 2.3em;
+    font-family: 'Bebas Neue', Geneva, Tahoma, sans-serif;
+
+    margin-bottom: 40px;
+}
+main{
+    margin: auto;
+    background-color: lightgray;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    padding: 10px;
+    
+    width: 900px;
+}
+.secao-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tim-biografia{
+    border-radius: 10px;
+    border: 1px dashed black;
+    padding: 10px;
+    
+    margin-right: 20px;
+    height: auto;
+}
+.tim-biografia:hover{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.637);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.11);
+    transition: all 120ms ease-in;
+    transform: scale(105%);
+}
+.tim-biografia h1{
+    color: white;
+    font-size: 1.6em;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+.tim-biografia p{
+    line-height: 25px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-family: Acme, sans-serif;
+}
+.tim-fortuna{
+    border-radius: 10px;
+    border: 1px dashed black;
+    padding: 10px;
+    font-size: 1.2;
+    
+    margin-right: 20px;
+    height: auto;
+}
+.tim-fortuna:hover{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.637);   
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.11);
+    transition: all 120ms ease-in;
+    transform: scale(105%);
+}
+.tim-fortuna h1{
+    color: white;
+    font-size: 1.6em;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+.tim-fortuna p{
+    line-height: 25px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-family: Acme, sans-serif;
+}
+.secao-lista{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.425);
+    background-color: rgba(128, 128, 128, 0.329);
+
+    height: auto;
+}
+.secao-lista h1{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: -10px;
+    background-color: rgba(211, 211, 211, 0.700);
+
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.secao-lista ul{
+    font-family: Acme, sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+
+
+    margin-top: 20px;
+    list-style-position: inside;
+}
+.img-secao-perfil{
+    margin-right: 10px;
+
+    width: 300px;
+    border-radius: 50%; 
+}
+
+footer{
+    margin-top: 20px;
+
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.582), transparent);
+}
+footer h1{
+    margin-bottom: 10px;
+}
+footer p{
+    font-size: 1.6em;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 500px) and (max-width: 767px){
+    #conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+    }
+    .img-secao-perfil{
+        margin-bottom: 10px;
+    }
+    .secao-perfil{
+        position: relative;
+        left: 10px;
+
+        flex-direction: column;
+    }
+    .tim-biografia{
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 500px){
+    header{
+        
+    }
+    #conteudo-principal{
+        display: flex;
+        flex-direction: column;
+
+        width: 470px;
+    }
+    .img-secao-perfil{
+        overflow: scroll;
+        margin-bottom: 10px;
+    }
+    .secao-perfil{
+        position: relative;
+        left: 2%;
+
+        flex-direction: column;
+
+    }
+    .tim-biografia{
+        margin-bottom: 10px;
+    }
+    .secao-lista{
+        width: 450px;
+    }
+}
+
+@media (max-width: 320px){
+    header{
+        font-size: 1.3em;
+    }
+    #conteudo-principal{
+        width: 300px;
+    }
+    .secao-perfil{
+        position: relative;
+        left: 10px;
+    }
+    .secao-lista{
+        width: 280px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*Sempre seguir a hierarquia no css, e html, o css e um estilo em cascata tem sempre uma hierarquia (quem esta acima sempre e o que prevalece.)*/
